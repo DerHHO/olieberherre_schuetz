@@ -115,13 +115,22 @@ sopranITextOLieberHerreSchuetz = \lyricmode {
   we -- cke uns auf, __
   dass wir be -- reit sein,
   wenn dein Sohn kömmt, wenn dein Sohn __ kömmt,
-  ihn mit Freu -- "den," mit Freu -- "den," ihn mit
-  Freu -- "den," mit Freu -- "den," mit Freu -- "den," mit Freu --
-  "den," ihn mit Freu -- "den," mit Freu -- "den," mit Freu -- "den,"
-  mit Freu -- den zu em -- pfa -- "hen," ihn mit Freu -- "den," mit
-  Freu -- "den," ihn mit Freu -- "den," mit Freu -- "den," mit Freu --
-  den zu em -- pfa -- hen und dir mit rei -- nem Her -- zen zu
-  die -- nen,
+  ihn mit Freu -- den, 
+  mit Freu -- den,
+  ihn mit Freu -- den,
+  mit Freu -- den,
+  mit Freu -- den,
+  mit Freu -- den,
+  ihn mit Freu -- den,
+  mit Freu -- den,
+  mit Freu -- den,
+  mit Freu -- den zu em -- pfa -- hen,
+  ihn mit Freu -- den,
+  mit Freu -- den,
+  ihn mit Freu -- den,
+  mit Freu -- den,
+  mit Freu -- den zu em -- pfa -- hen 
+  und dir mit rei -- nem Her -- zen zu die -- nen,
   durch den -- sel -- bi -- gen,
   dei -- nen lie -- ben Sohn,
   Je -- sum Chri -- stum,
@@ -319,6 +328,81 @@ continuoNotenOLieberHerreSchuetz = \tempTranspose \relative c {
 orgelLHNotenOLieberHerreSchuetz = \tempTranspose \relative c {
   \globalOLieberHerreSchuetz
   \continuoNotenOLieberHerreSchuetz
+}
+
+bezifferungOLieberHerreSchuetz = \figuremode {
+  \globalOLieberHerreSchuetz
+  s1*2 |
+  <_+>2 <4>1 <_+>2 |
+  s1. <6>2 |
+  s2 <6> s2 <6> |
+  s2 <6> s1 |
+  <4>2 <3> s1 |
+  s1*2 |
+  <6 _+>2  <4> <4> <_+> |
+  s1. <6>2 |
+  s2 <6> s2 <6> |
+  s2 <6> s1 |
+  <4>2 <3> s1 |
+  s2. <_->4 <7>2 <_+> |
+  <_+>1 |
+  s1. |
+  s1. |
+  s1. |
+  s1 <_+>2 |
+  s2 <_+>1 | 
+  s2 <_+>1 | 
+  s2 <_+>1 | 
+  s1. |
+  s1. |
+  s1. |
+  s1. |
+  
+  s1. |
+  s1. |
+  s1. |
+  <_->2 <_!>1 |
+  s1*2 |
+  s1*2 |
+  
+  s1 <[6]>2 s2 |
+  <4>2 <_+> |
+  <_+>1. |
+  s2 <_+>1 |
+  s2 <_+>1 |
+  s2 <_+> <_+> |
+  
+  s2 <_+>1 |
+  s2 <_+>1 |
+  s2. <_!>4 s2 |
+  s2 <[_+]>1 |
+  <[_+]>1 |
+  s1*2 |
+  s2 <6>4 <6> s1 |
+  <6>2 s <_+> <_-> |
+  <4>2 <_+> <_!>1 |
+  s1*2 |
+  
+  s2 <_-> s2 s |
+  <5+>4 <6> <7> <6\\> s4 <7>8 <6> <[_+]>2 |
+  
+  s1 <[6]>2 s2 |
+  <5+>4 <6> <7> <6\\> s4 <7>8 <6> s4 s4 |
+  
+  s4 <7>8 <6\\> s2 s1 |
+  s2 <4>4 <3> s4 <6> s2 |
+  
+  <4>4 <_+> s2 s s |
+  s4 <7>8 <6> <_+>2 s s |
+  
+  s8 <6> <7> <6> <_+>2 s s |
+  s s s4 <6> <4>4 <3> |
+  s4 <6> <4> <3> <_->2 <4>4 <_+> |
+  
+  <_->2 s s s |
+  <_->1 <4>2 <3> |
+  <4>2 <_+> s1
+  
 }
 
 

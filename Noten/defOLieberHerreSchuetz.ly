@@ -94,7 +94,7 @@ orgelsystemOLieberHerreSchuetz = {
               \orgelLHNotenOLieberHerreSchuetz
             }
           }
-
+          \new FiguredBass \bezifferungOLieberHerreSchuetz
         >>
 
       >>
