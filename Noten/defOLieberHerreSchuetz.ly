@@ -1,3 +1,5 @@
+\version "2.22.0"
+
 
 chorpartiturOLieberHerreSchuetz = {
   \new ChoirStaff <<
@@ -48,6 +50,7 @@ chorpartiturOLieberHerreSchuetz = {
     >>
   >>
 }
+
 orgelsystemOLieberHerreSchuetz = {
   <<
     \new PianoStaff <<

@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.22.0"
 
 \include "../Noten/dynamicparams.ly"
 \include "../Noten/formatangaben.ly"
@@ -9,7 +9,7 @@
 \include "../Noten/mydrums2.ly"
 \include "../Noten/drumdefinitions.ly"
 
-tempTranspose = #(define-music-function (parser location music)
+tempTranspose = #(define-music-function (music)
                    (ly:music?)
                    (let* ((octave (or (ly:get-option 'octave) -1))
                           (note (or (ly:get-option 'note) 0))
@@ -233,7 +233,7 @@ sopranIITextOLieberHerreSchuetz = \lyricmode {
   mit Freu -- den zu em -- pfa -- hen
   und dir mit rei -- nem Her -- zen zu die -- nen,
   durch den -- sel -- bi -- gen dei -- nen lie -- ben Sohn,
-  Je -- su Chri -- stum,
+  Je -- sum Chri -- stum,
   A -- men,
   den -- sel -- bi -- gen dei -- nen lie -- ben Sohn,
   Je -- sum Chri -- stum,
@@ -386,7 +386,7 @@ bezifferungOLieberHerreSchuetz = \figuremode {
   s2 <_-> s2 s |
   <5+>4 <6> <7> <6\\> s4 <7>8 <6> <[_+]>2 |
   
-  s1 <[6]>2 s2 |
+  s1 s2 s2 |
   <5+>4 <6> <7> <6\\> s4 <7>8 <6> s4 s4 |
   
   s4 <7>8 <6\\> s2 s1 |

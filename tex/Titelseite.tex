@@ -1,0 +1,88 @@
+\documentclass[fontsize=18pt,
+ngerman,
+paper=a4,
+pagesize
+]{scrartcl} 
+\usepackage[left=10mm,right=10mm,top=20mm,bottom=20mm]{geometry} %margin={0.7cm,0.8cm}
+%\usepackage[paperheight=21.2cm,paperwidth=39.9cm,margin={0.8cm,0.8cm}]{geometry} 
+\usepackage{ngerman} 
+%\usepackage{rotating}
+%\usepackage{multicol} 
+\usepackage{graphicx} 
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage{tgschola} 
+%\usepackage[sfdefault,black]{merriweather}
+%\usepackage[sfdefault]{roboto}
+%\usepackage{color}
+%\usepackage[dvipsnames]{xcolor}
+%\usepackage{blindtext}
+%\usepackage{wallpaper}
+%\usepackage{shadowtext}
+%\usepackage{transparent}
+%\usepackage{merriweather}
+%\shadowoffset{1pt}
+%\usepackage{calc}
+\pagestyle{empty}
+%\geometry{a3paper,left=14mm,right=14mm, top=1cm, bottom=1cm} 
+%\setlength{\columnsep}{1cm} \setlength{\parindent}{6pt} 
+%\setlength{\columnseprule}{0.4pt}
+%\newcommand{\raisedrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill} 
+\usepackage{ifthen}
+\bigskipamount=10pt plus 6pt minus 8pt 
+
+\input{qrcodes.tex}
+\input{qrcode.tex}
+
+\input{Bezeichnungen.tex}
+\input{dynamicparams.tex}
+\input{Instrument.tex}
+
+\newcommand{\KompTitel}{
+\par ~
+\vfill
+\LARGE \komponist
+%\arrangeur
+\lebensdaten
+\vfill
+\par
+\Huge \textbf{\titel}
+\untertitel
+}
+
+\newcommand{\Besetzung}{
+\vfill
+\par\Large \besetzung
+}
+
+\newcommand{\Herausgeber}{
+\vfill
+\par
+\footnotesize 
+\vfill
+}
+
+\newcommand{\Urtext}{
+  Urtext
+}
+
+%\newboolean{Altenburg}
+%\setboolean{Archivnummer}{false} % Schalter
+%\ifnum\PrintVersion>0 \setboolean{Archivnummer}{true}
+%\else\setboolean{Archivnummer}{false}\fi
+
+\begin{document}
+\begin{flushright}
+\persoenlichesExemplar
+\end{flushright}
+\begin{center}
+\KompTitel
+\Besetzung
+\par \vfill\Large \textbf{\instrument}
+\par\vfill\LARGE \textbf{\ausgabe}
+\herausgeber
+
+%\ifthenelse{\boolean{Archivnummer}}{\vfill\footnotesize{}***archivnummer}{}
+\vfill\footnotesize{}\archivnummer
+\end{center}
+\end{document}

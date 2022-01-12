@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.22.0"
 
 komponist = \markup { Heinrich Schütz }
 widmung = \markup {  }
