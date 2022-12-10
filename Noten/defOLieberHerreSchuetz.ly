@@ -57,53 +57,53 @@ orgelsystemOLieberHerreSchuetz = {
   <<
     \new PianoStaff <<
 
-      \set PianoStaff.instrumentName = "Orgel"
-      \set PianoStaff.shortInstrumentName = "Org."	<<
+      %\set PianoStaff.instrumentName = "Orgel"
+      %\set PianoStaff.shortInstrumentName = "Org."	<<
 
-        \new Staff \with {
-          instrumentName = ""
-          shortInstrumentName = ""
-          midiInstrument = "acoustic grand"
 
-        }
-        <<
-          \new Voice = "vrH" {
-            \tag #'transponierendepartitur {
-              \clef "treble"
-              \transpose c c \orgelRHNotenOLieberHerreSchuetz
-            }
-            \tag #'klingendepartitur {
-              \clef "treble"
-              \orgelRHNotenOLieberHerreSchuetz
-            }
+      \new Staff \with {
+        instrumentName = ""
+        shortInstrumentName = ""
+        midiInstrument = "acoustic grand"
+
+      }
+      <<
+        \new Voice = "vrH" {
+          \tag #'transponierendepartitur {
+            \clef "treble"
+            \transpose c c \orgelRHNotenOLieberHerreSchuetz
           }
-
-        >>
-
-
-        \new Staff \with {
-          instrumentName = ""
-          shortInstrumentName = ""
-          midiInstrument = "acoustic grand"
-
-          \override VerticalAxisGroup.staff-staff-spacing = #'((basic-distance . 9) (minimum-distance . 7) (padding . 1) (stretchability . 5))
-        }
-        <<
-          \new Voice { \ablaufzeileOLieberHerreSchuetz }
-          \new Voice = "vlH" {
-            \tag #'transponierendepartitur {
-              \clef "bass"
-              \transpose c c \orgelLHNotenOLieberHerreSchuetz
-            }
-            \tag #'klingendepartitur {
-              \clef "bass"
-              \orgelLHNotenOLieberHerreSchuetz
-            }
+          \tag #'klingendepartitur {
+            \clef "treble"
+            \orgelRHNotenOLieberHerreSchuetz
           }
-          \new FiguredBass \bezifferungOLieberHerreSchuetz
-        >>
+        }
 
       >>
+
+
+      \new Staff \with {
+        instrumentName = ""
+        shortInstrumentName = ""
+        midiInstrument = "acoustic grand"
+
+        \override VerticalAxisGroup.staff-staff-spacing = #'((basic-distance . 9) (minimum-distance . 7) (padding . 1) (stretchability . 5))
+      }
+      <<
+        \new Voice { \ablaufzeileOLieberHerreSchuetz }
+        \new Voice = "vlH" {
+          \tag #'transponierendepartitur {
+            \clef "bass"
+            \transpose c c \orgelLHNotenOLieberHerreSchuetz
+          }
+          \tag #'klingendepartitur {
+            \clef "bass"
+            \orgelLHNotenOLieberHerreSchuetz
+          }
+        }
+        \new FiguredBass \bezifferungOLieberHerreSchuetz
+      >>
+
     >>
   >>
 
@@ -112,10 +112,8 @@ orgelsystemOLieberHerreSchuetz = {
 scoreOLieberHerreSchuetz = {
   <<
     \chorpartiturOLieberHerreSchuetz
-    \orgelsystemOLieberHerreSchuetz
 
-
-    %{\new Staff \with {
+    \new Staff \with {
       instrumentName = "Basso continuo"
       shortInstrumentName = "B.c."
       midiInstrument = "acoustic grand"
@@ -132,7 +130,14 @@ scoreOLieberHerreSchuetz = {
           \continuoNotenOLieberHerreSchuetz
         }
       }
+      \new FiguredBass \bezifferungOLieberHerreSchuetz
+    >>
+  >>
+}
 
-    >>%}
+scoreMitAussetzungOLieberHerreSchuetz = {
+  <<
+    \chorpartiturOLieberHerreSchuetz
+    \orgelsystemOLieberHerreSchuetz
   >>
 }
