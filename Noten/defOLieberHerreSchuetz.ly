@@ -12,6 +12,7 @@ chorpartiturOLieberHerreSchuetz = {
 
       }
       <<
+        \new Voice { \ablaufzeileOLieberHerreSchuetz }
         \new Voice = "vsop1" {
           \tag #'transponierendepartitur {
             \clef "treble"
@@ -34,6 +35,7 @@ chorpartiturOLieberHerreSchuetz = {
 
       }
       <<
+        \new Voice { \ablaufzeileOLieberHerreSchuetz }
         \new Voice = "vsop2" {
           \tag #'transponierendepartitur {
             \clef "treble"
@@ -87,6 +89,7 @@ orgelsystemOLieberHerreSchuetz = {
           \override VerticalAxisGroup.staff-staff-spacing = #'((basic-distance . 9) (minimum-distance . 7) (padding . 1) (stretchability . 5))
         }
         <<
+          \new Voice { \ablaufzeileOLieberHerreSchuetz }
           \new Voice = "vlH" {
             \tag #'transponierendepartitur {
               \clef "bass"

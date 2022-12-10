@@ -28,7 +28,28 @@ globalOLieberHerreSchuetz = {
 
 ablaufzeileOLieberHerreSchuetz = {
   \globalOLieberHerreSchuetz
-
+  s1*26
+  \once \omit Staff.TimeSignature \time 1/1
+  s1
+  \bar "||"
+  \time 3/2
+  s1.*15 |
+  \bar "||"
+  \time 4/2
+  s1*6 |
+  \once \omit Staff.TimeSignature \time 1/1
+  s1 |
+  \bar "||"
+  \time 3/2
+  s1.*8 |
+  \bar "||"
+  \time 2/2
+  s1 
+  \once \omit Staff.TimeSignature \time 4/2
+  s1*36
+  \once \omit Staff.TimeSignature
+  \time 3/1
+  s1 s1 s1
 }
 
 sopranINotenOLieberHerreSchuetz = \tempTranspose \relative g' {
@@ -47,7 +68,7 @@ sopranINotenOLieberHerreSchuetz = \tempTranspose \relative g' {
   bes2 ~ bes8 bes8 a8 g8 c4 c4 d4 es4 | % 12
   c1 bes1 | % 13
   r4 a4 bes4 g2 ( fis8 [ e8 ] fis2 ) \mBreak | % 14
-  \once \omit Staff.TimeSignature \time 1/1
+  
   g1 \bar "||"
   \time 3/2 r2 c2 g2 | % 16
   a2 g2 e2 | % 17
@@ -76,9 +97,9 @@ sopranINotenOLieberHerreSchuetz = \tempTranspose \relative g' {
   c2 b2 gis2 | % 39
   a2 gis2 b2 | \barNumberCheck #40
   c2. b4 a2 | % 41
-  c2 b1 \bar "||"
+  c2 b1 
   \time 2/2 a1 |
-  \once \omit Staff.TimeSignature \time 4/2
+  
   r2 f2 f1 \mBreak | % 44
   \numericTimeSignature\time 4/2  r4 f4 g4 a4 bes1 | % 45
   f2 r4 d'4 fis,4. ( e16 [ fis16 ] g2 ~ | % 46
@@ -249,6 +270,7 @@ sopranIITextOLieberHerreSchuetz = \lyricmode {
 
 orgelRHNotenOLieberHerreSchuetz = \tempTranspose \relative c' {
   \globalOLieberHerreSchuetz
+  \ablaufzeileOLieberHerreSchuetz
 
 }
 
